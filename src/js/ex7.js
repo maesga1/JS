@@ -1,8 +1,9 @@
-let text = prompt("Escribe una frase");
-let nText = text.length;
-let i;
-for (i = 0; i < nText; i++) {
-if (String.substr(i,1) === "a")  {
-document.write(String.substr(i,1))
+let frase = prompt("Ingresa una frase:");
+frase = frase.toLowerCase();
+let contador = 0;
+for (let i = 0; i < frase.length; i++) {
+  if (frase[i] === 'a') {
+    contador++;
+  }
 }
-}
+document.write("La letra 'a' aparece " + contador + " veces en la frase.");
